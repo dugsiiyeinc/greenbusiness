@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Info</title>
+</head>
+<body>
+    <!-- SECTION 4: INFO  -->
+    <section class="tm-section" id="info">
+        <div class="tm-container">
+            <div class="tm-header">
+                <h2 class="tm-title">Lorem ipsum dolor sit amet.</h2>
+                <p class="tm-subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit officia culpa aliquam enim veniam molestiae amet quasi sunt.</p>
+            </div>
+            <div class="tm-grid">
+                <!-- Cards... -->
+                <div class="tm-card">
+                    <div class="tm-icon-box"><i class="fa-regular fa-clock"></i></div>
+                    <h3 class="tm-card-title">Lorem, ipsum.</h3>
+                    <p class="tm-card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias, labore!</p>
+                </div>
+                <div class="tm-card">
+                    <div class="tm-icon-box"><i class="fa-solid fa-wallet"></i></div>
+                    <h3 class="tm-card-title">Lorem, ipsum</h3>
+                    <p class="tm-card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias, labore</p>
+                </div>
+                <div class="tm-card">
+                    <div class="tm-icon-box"><i class="fa-solid fa-headset"></i></div>
+                    <h3 class="tm-card-title">Lorem, ipsu</h3>
+                    <p class="tm-card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias, labor</p>
+                </div>
+                <div class="tm-card">
+                    <div class="tm-icon-box"><i class="fa-solid fa-database"></i></div>
+                    <h3 class="tm-card-title">Lorem, ips</h3>
+                    <p class="tm-card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias, lab</p>
+                </div>
+                <div class="tm-card">
+                    <div class="tm-icon-box"><i class="fa-solid fa-globe"></i></div>
+                    <h3 class="tm-card-title">Lorem, ip</h3>
+                    <p class="tm-card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias, la</p>
+                </div>
+                <div class="tm-card">
+                    <div class="tm-icon-box"><i class="fa-solid fa-arrow-trend-down"></i></div>
+                    <h3 class="tm-card-title">Lorem, i </h3>
+                    <p class="tm-card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias, l</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="gb-footer">
+        <div class="gb-footer-container">
+            <div class="gb-brand">
+                <h3 class="gb-name">Greenbusiness</h3>
+            </div>
+            <div class="gb-date-info">
+                <p>Created: <span>February 10, 2026</span></p>
+                <p class="gb-copy">&copy; 2026 All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JAVASCRIPT FOR MOBILE MENU -->
+    <script>
+        const hamburger = document.getElementById('hamburger-btn');
+        const navMenu = document.getElementById('navLinks');
+
+        hamburger.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+            // Change Icon
+            const icon = hamburger.querySelector('i');
+            if(navMenu.classList.contains('active')){
+                icon.classList.remove('fa-bars');
+                icon.classList.add('fa-times');
+            } else {
+                icon.classList.remove('fa-times');
+                icon.classList.add('fa-bars');
+            }
+        });
+    </script>
+</body>
+</html>
